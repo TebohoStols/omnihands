@@ -26,7 +26,7 @@ const ContactUs = () => {
     // Append the current message (including any edits) to the form data
     formData.append('Message', message);
 
-    formData.append('access_key', '90963a60-cecc-4f88-92ee-630bb8bc2d29');
+    formData.append('access_key', '50c4eafb-b23a-49c0-8a3f-91b81c752e6d');
 
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
