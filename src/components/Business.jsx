@@ -57,7 +57,7 @@ const Business = () => {
         </p>
 
         <a
-          href="/contact#clients"
+          href="/home#clients"
           style={{
             display: 'inline-block', // Ensures the link behaves like a block element
             textDecoration: 'none', // Removes underline

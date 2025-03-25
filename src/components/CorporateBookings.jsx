@@ -47,7 +47,7 @@ const CorporateBookings = () => {
         <p className='font-poppins font-normal text-[16px] text-gray-300 leading-7 mb-4'>
           Contact us today to arrange your corporate bookings.
         </p>
-        <a href="/contact">
+        <a href="/contact#clients">
           <button
             className='bg-blue-gradient text-primary font-poppins font-medium text-[18px] px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300'
           >

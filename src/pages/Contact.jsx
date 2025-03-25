@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 const Contact = () => (
 
   <Layout>
-    <div className={`bg-primary w-full overflow-hidden flex flex-wrap justify-center items-center p-4`}>
+    <div id="clients" className={`bg-primary w-full overflow-hidden flex flex-wrap justify-center items-center p-4`}>
     {/* Contact details displayed side by side */}
     {contact_details.map((contact) => (
       <div

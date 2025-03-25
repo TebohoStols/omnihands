@@ -151,12 +151,12 @@ const EssentialStationery = () => {
   return (
     <Layout>
       <div className="bg-gray-900 text-white min-h-screen">
-        {/* Sticky Cart Summary */}
+        {/* Sticky Cart Summary - Updated to match Supplies component styling */}
         <div className="cart-counter sticky top-0 bg-gray-900 p-4 shadow-lg z-40 flex justify-between items-center">
           <h1 className="text-2xl font-bold">Essential Stationery</h1>
           <button
             onClick={toggleCart}
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center"
+            className="bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none rounded-md px-4 py-2 hover:opacity-90 transition-opacity"
           >
             <span className="mr-2">Cart</span>
             <span className="bg-red-500 text-white rounded-full px-2 py-1 text-sm">
@@ -165,14 +165,14 @@ const EssentialStationery = () => {
           </button>
         </div>
 
-        {/* Feedback Message */}
+        {/* Feedback Message - No changes needed */}
         {feedbackMessage && (
           <div className="fixed top-20 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50">
             {feedbackMessage}
           </div>
         )}
 
-        {/* Main Content */}
+        {/* Main Content - Updated button styling */}
         <div className="pt-20 p-6">
           {stationeryData.map((section, index) => (
             <div key={index} className="mb-8">
@@ -193,7 +193,7 @@ const EssentialStationery = () => {
                         <button
                           onClick={() => addToCart(item)}
                           disabled={isLoading}
-                          className="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-blue-300 flex items-center justify-center"
+                          className="mt-2 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none rounded-md px-4 py-2 hover:opacity-90 transition-opacity disabled:opacity-50"
                         >
                           {isLoading ? (
                             <svg
@@ -229,7 +229,7 @@ const EssentialStationery = () => {
           ))}
         </div>
 
-        {/* Cart Sidebar */}
+        {/* Cart Sidebar - Updated button styling */}
         <div
           className={`fixed top-0 right-0 h-full w-96 bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out ${
             isCartOpen ? 'translate-x-0' : 'translate-x-full'
@@ -273,7 +273,7 @@ const EssentialStationery = () => {
                     <p className="text-sm text-gray-300">Quantity: {cartItem.quantity}</p>
                     <button
                       onClick={() => removeFromCart(index)}
-                      className="mt-2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+                      className="mt-2 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none rounded-md px-4 py-2 hover:opacity-90 transition-opacity"
                     >
                       Remove
                     </button>
@@ -281,7 +281,7 @@ const EssentialStationery = () => {
                 ))}
               </div>
             )}
-            {/* Add "Create Quote" button */}
+            {/* Add "Create Quote" button - Updated to match Supplies component */}
             {cart.length > 0 && (
               <button
                 onClick={handleCreateQuote}

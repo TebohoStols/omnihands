@@ -47,12 +47,13 @@ const OfficeCleaningServices = () => {
           <p className='font-poppins font-normal text-[16px] text-gray-300 leading-7 mb-4'>
             Contact us today to schedule your office cleaning service.
           </p>
+          <a href="/contact#clients">
           <button
             className='bg-blue-gradient text-primary font-poppins font-medium text-[18px] px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300'
-            onClick={() => alert('Redirect to contact form or booking page')}
           >
             Schedule Cleaning
           </button>
+        </a>
         </div>
       </div>
     </Layout>

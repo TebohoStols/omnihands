@@ -13,7 +13,7 @@ const CTA = () =>  (
 
     <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
     <a
-      href="/contact#clients"
+      href="/home#clients"
       style={{
         display: 'inline-block',
         textDecoration: 'none',
